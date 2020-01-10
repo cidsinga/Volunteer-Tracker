@@ -16,6 +16,7 @@ class Project
     self.title == self_compare.title ? true : false
   end
 
+
   def self.all()
   from_db_projects = DB.exec("SELECT * FROM projects;")
   projects = []
