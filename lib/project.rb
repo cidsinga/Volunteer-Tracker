@@ -39,5 +39,9 @@ def self.find(id)
   project = Project.new({:title => title, :id => id})
 end
 
+def volunteers
+  Volunteer.find_by_project(self.id)
+end
+
 
 end
