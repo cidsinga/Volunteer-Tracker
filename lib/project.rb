@@ -29,7 +29,13 @@ end
 
 def save()
   results = DB.exec("INSERT INTO projects (title) VALUES ('#{@title}')RETURNING id;").first
-  @id = results.fetch("id").to_i  
+  @id = results.fetch("id").to_i
+end
+
+def self.find(id)
+  returned_projects = DB.exec("SELECT * FROM projects WHERE id = #{id};").first()
+  title = returned_projects.fetch("title")
+  project = Project.new({:title => title, :id => id})
 end
 
 
