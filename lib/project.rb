@@ -1,5 +1,5 @@
 class Project
-  attr_accessor :name
+  attr_accessor :title
   attr_reader :id
 
   def initialize(attributes)
@@ -7,8 +7,7 @@ class Project
     @id = attributes.fetch(:id)
   end
 
-  def title()
-    result = DB.exec("SELECT title FROM projects;").first()
-
-  end
+  # def title()
+  #   project = DB.exec("SELECT * title FROM projects;").first()
+  # end
 end
