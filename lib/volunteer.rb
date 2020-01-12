@@ -41,10 +41,21 @@ class Volunteer
     volunteers = []
     results = DB.exec("SELECT * FROM volunteers WHERE project_id = #{project_id};")
     results.each() do |result|
+      #title or name...
       name = result.fetch("name")
       id = result.fetch("id").to_i
       volunteers.push(Volunteer.new({:name => name, :id => id, :project_id => project_id}))
     end
     volunteers
+  end
+
+  def project
+    Project.find(@project_id)
+  end
+
+  def update(name, project_id)
+    @name = name
+    @project_id = project_id
+    DB.exec("UPDATE volunteers SET name = '#{@name}', project_id = #{@project_id} WHERE id = #{@id}")
   end
 end

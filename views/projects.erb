@@ -2,3 +2,11 @@
   <input type="text" name="title" placeholder="Add a Project title" required>
   <button type="submit" name="button">Create Project</button>
 </form>
+<% if @projects.any? %>
+<h3>Project Results</h3>
+<ul>
+  <% @projects.each do |project| %>
+  <li> <a href="/projects/<%=project.id%>"><%= project.title %></a></li>
+  <%end%>
+</ul>
+<%end%>
