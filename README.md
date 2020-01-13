@@ -1,38 +1,27 @@
 
-  # _library_
+  # _Volunteer Tracker_
 
-  #### _short description _
+  #### _A Project Management Tool_
 
-  #### By _**name**_
+  #### By _**Casey Idsinga**_
 
-  ## Description
+  ## Enables you to create projects and assign volunteers to work on those projects.  You can create, edit, and delete projects, and add volunteers to those projects.  
 
-  _ _
-
-  |Behavior|Input|Output|
-  |---|---|---|
-  |   |   |   |
-  |   |   |   |
-  |   |   |   |
 
   ## Setup/Installation Requirements
 
-  * _Launch <https://url.io/(---------)> in your browser._
-  ### OR ###
-  * clone and open the file locally
-  * _in terminal run:_
-  >$git clone https://url/(------).git
-  * _open index.html in your browser._
-
+  * clone repo and open the file locally
+  * _in terminal run:_ ruby app.rb
+  * _open localhost:4567 in your browser._
 
 
   ## Known Bugs
 
-  _No known bugs_
+  _the project edit page is not working correctly_
 
   ## Support and contact details
 
-  _If you have any issues with the program or want to reach out, email ['mwells1286@gmail.com](href='mailto:email@email.com')_
+  _If you have any issues with the program or want to reach out, email ['cidsinga@gmail.com](href='mailto:email@email.com')_
 
   ## Technologies Used
 
@@ -43,5 +32,4 @@
 
   *Licensed under MIT license*
 
-  Copyright (c) 2019 **_name_**
-  
+  Copyright (c) 2019 **_Casey Idsinga_**
