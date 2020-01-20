@@ -64,10 +64,12 @@ delete('/projects/:id/volunteers/:vol_id') do
   erb(:project)
 end
 
-patch('/projects/:id') do
+patch('/projects/:id/') do
   @project = Project.find(params[:id].to_i())
   @project.update(params[:title])
-  redirect to ('/projects')
+  erb (:projects)
+
+
 end
 
 delete('/projects/:id') do
