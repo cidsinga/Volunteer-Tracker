@@ -64,10 +64,10 @@ delete('/projects/:id/volunteers/:vol_id') do
   erb(:project)
 end
 
-patch('/projects/:id/') do
+patch('/projects/:id') do
   @project = Project.find(params[:id].to_i())
-  @project.update(params[:title])
-  erb (:projects)
+  @project.update({title: params[:title]})
+  erb (:project)
 
 
 end
